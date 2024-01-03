@@ -1,0 +1,155 @@
+/*------Config body e container page  ---------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #393939;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12pt;
+}
+
+/*------Config nav    ---------*/
+
+.container-home {
+    backdrop-filter: blur(256px);
+    padding: 15px;
+}
+
+.container-home div {
+    text-align: center;
+}
+
+.container-home div img {
+    display: inline-flex;
+    width: 90px;
+    height: 90px;
+}
+
+.pesquisa {
+    display: inline-flex;
+    margin: 0 0 0 20%;
+}
+
+.pesquisa button {
+    padding: 10px;
+    background: #494848;
+}
+
+.pesquisa input {
+    padding: 10px 100px 10px 5px;
+    border: none;
+    background: #494848;
+    border-radius: 0px 20px 20px 0px;
+    color: #c6c3c3;
+}
+
+.nav-menu {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.nav-menu a {
+    margin: 5px;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.nav-menu a:hover {
+    color:aquamarine;
+    border-bottom: 3px solid #000;
+    transition: all 0.3s ease;
+}
+
+/*------Config rodape nav    ---------*/
+
+.rodape-nav {
+    text-align: center;
+    background: #494848;
+    padding: 10px;
+}
+
+.rodape-nav a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 15px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.rodape-nav a:hover {
+    background: #6b6969;
+    transition: all 0.3s ease;
+}
+
+/*------Config conteudos    ---------*/
+
+#container-conteudo {
+    align-items: center;
+    padding: 0 20%;
+}
+
+.conteudos {
+    width: 300px;
+    margin: 50px auto;
+    display: inline-flex;
+    text-align: center;
+    
+}
+
+.conteudos section {
+    width: 290px;
+    background: #3b3b3b;
+    padding: 20px;
+    color: #a3a3a3;
+    border-radius: 15px;
+}
+
+.conteudos section:hover {
+    background: #494848;
+    color: #c0bebe;
+}
+
+.conteudos section div h3 {
+    margin: 10px;
+    color: #ffffff;
+}
+
+.conteudos section .star-widget input {
+    display: none;
+}
+
+.conteudos section .star-widget label {
+    font-size: 25px;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+}
+
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label {
+    color: #fd4;
+}
+
+input:checked ~ label {
+    color: #fd4;
+}
+
+input#rate-5-1:checked ~ label,
+input#rate-5-2:checked ~ label {
+    color: #fe7;
+    text-shadow: 0 0 20px #952;
+}
+
+input#rate-5-1:hover ~ label,
+input#rate-5-2:hover ~ label,
+input#rate-5-3:hover ~ label {
+    color: #fe7;
+    text-shadow: 0 0 20px #952;
+}
